@@ -8,9 +8,9 @@ int main(){
     int n = s.size();
     int cnt1=0,cnt2=0;
     
-    for(auto x:s){
-        if(isupper(x)) cnt1++;
-        else if(islower(x)) cnt2++;
+    for(int i=0; i<n; i++){
+        if(isupper(s[i])) cnt1++;
+        else if(islower(s[i])) cnt2++;
     }
     
     if(cnt1<=cnt2){
